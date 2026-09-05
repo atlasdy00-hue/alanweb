@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alan Visonà</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="#/" data-nav="home">Alan Visonà</a>
+  <nav class="site-nav">
+    <a href="#/publications" data-nav="publications">Publications</a>
+    <a href="#/teaching" data-nav="teaching">Teaching</a>
+    <a href="#/biography" data-nav="biography">Biography</a>
+    <a href="#/contact" data-nav="contact">Contact</a>
+  </nav>
+</header>
+
+<div class="page">
+
+  <!-- ===== HOME ===== -->
+  <div id="page-home">
+
+    <header class="hero">
+      <div class="cover-panel">
+        <canvas class="lattice-canvas" aria-hidden="true"></canvas>
+        <div class="cover-panel-content">
+          <h1 class="name">Alan Visonà</h1>
+          <p class="tagline" data-slot="tagline"></p>
+        </div>
+      </div>
+
+      <div class="tags">
+        <span class="tag">Magnonics</span>
+        <span class="tag">Nanomagnetism</span>
+        <span class="tag">Neuromorphic Computing</span>
+      </div>
+
+      <div class="contact-row">
+        <a href="https://scholar.google.com/citations?hl=en&user=-hKl4UYAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="#/contact" data-nav="contact">Get in touch <span class="arrow">→</span></a>
+      </div>
+    </header>
+
+    <div class="callout">
+      <span class="dot"></span>
+      <p><strong>Currently:</strong> <span data-slot="currently"></span></p>
+    </div>
+
+    <section id="research">
+      <h2 class="section-title">Research interests <span class="eyebrow">01</span></h2>
+      <p class="lede" data-slot="research-lede"></p>
+      <div class="interest-grid" data-slot="interests"></div>
+    </section>
+
+    <section id="education">
+      <h2 class="section-title">Education <span class="eyebrow">02</span></h2>
+      <div data-slot="education-rows"></div>
+    </section>
+
+    <section id="skills">
+      <h2 class="section-title">Skills <span class="eyebrow">03</span></h2>
+      <div class="skill-groups" data-slot="skills"></div>
+    </section>
+
+    <section id="publications">
+      <h2 class="section-title">Publications <span class="eyebrow">04</span></h2>
+      <ol class="pub-list" id="pub-list"></ol>
+    </section>
+
+  </div>
+
+  <!-- ===== TEACHING ===== -->
+  <div id="page-teaching" hidden>
+    <div class="cover-panel teaching-cover">
+      <canvas class="contour-canvas" aria-hidden="true"></canvas>
+      <div class="cover-panel-content">
+        <span class="eyebrow">Teaching &amp; mentoring</span>
+        <h1>Teaching</h1>
+      </div>
+    </div>
+
+    <p class="lede" data-slot="teaching-intro"></p>
+
+    <ul class="contact-list" style="margin-top: 1.6rem;" data-slot="teaching-rows"></ul>
+  </div>
+
+  <!-- ===== BIOGRAPHY ===== -->
+  <div id="page-biography" hidden>
+    <div class="cover-panel bio-cover">
+      <canvas class="crystal-canvas" aria-hidden="true"></canvas>
+      <div class="cover-panel-content">
+        <span class="eyebrow">About</span>
+        <h1>Biography</h1>
+      </div>
+    </div>
+
+    <div class="bio-copy" data-slot="bio-copy"></div>
+  </div>
+
+  <!-- ===== CONTACT ===== -->
+  <div id="page-contact" hidden>
+    <div class="page-hero">
+      <span class="eyebrow">Get in touch</span>
+      <h1>Contact</h1>
+    </div>
+
+    <ul class="contact-list">
+      <li class="contact-item">
+        <span class="label">Email</span>
+        <span class="value" data-slot="contact-email"><a href="#"></a></span>
+      </li>
+      <li class="contact-item">
+        <span class="label">Google Scholar</span>
+        <span class="value"><a href="https://scholar.google.com/citations?hl=en&user=-hKl4UYAAAAJ" target="_blank" rel="noopener">scholar.google.com/…-hKl4UYAAAAJ</a></span>
+      </li>
+      <li class="contact-item">
+        <span class="label">ORCID</span>
+        <span class="value" data-slot="contact-orcid"><a href="#"></a></span>
+      </li>
+      <li class="contact-item">
+        <span class="label">GitHub</span>
+        <span class="value" data-slot="contact-github"><a href="#"></a></span>
+      </li>
+      <li class="contact-item">
+        <span class="label">LinkedIn</span>
+        <span class="value" data-slot="contact-linkedin"><a href="#"></a></span>
+      </li>
+    </ul>
+  </div>
+
+</div>
+
+<footer>
+  <span>Full publication list and citation metrics on <a href="https://scholar.google.com/citations?hl=en&user=-hKl4UYAAAAJ" target="_blank" rel="noopener">Google Scholar</a>.</span>
+  <span>Updated September 2026</span>
+</footer>
+
+
+<script src="content/home.js"></script>
+<script src="content/teaching.js"></script>
+<script src="content/biography.js"></script>
+<script src="content/contact.js"></script>
+<script src="scripts/content.js"></script>
+
+<script src="data/publications.js"></script>
+<script src="scripts/router.js"></script>
+<script src="scripts/lattice.js"></script>
+<script src="scripts/crystal.js"></script>
+<script src="scripts/contour.js"></script>
+
+</body>
+</html>
