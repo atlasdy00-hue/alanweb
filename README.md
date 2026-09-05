@@ -147,18 +147,37 @@ Jekyll processing. Asset paths are relative and routing is hash-based, so
 the site works unchanged whether it's served from a subpath or a root
 domain — nothing to configure.
 
-### Custom domain
+### Custom domain — alanvisona.com
 
-1. Buy the domain (any registrar; ~10–15 €/year).
-2. Repo **Settings → Pages → Custom domain**: enter the domain, Save. This
-   commits a `CNAME` file to the repo — keep it.
-3. At the registrar's DNS:
-   - apex domain (`example.com`): four `A` records to `185.199.108.153`,
-     `185.199.109.153`, `185.199.110.153`, `185.199.111.153` (and the
-     matching `AAAA` records if you want IPv6).
-   - or `www.example.com`: one `CNAME` record to `<username>.github.io`.
-4. Back in Settings → Pages, tick **Enforce HTTPS** once the certificate
-   has been issued (can take up to an hour).
+The `CNAME` file in the repo root already holds `alanvisona.com`, so the
+site serves from the apex domain with `www` redirecting to it.
+
+**1. DNS records at the registrar** (where alanvisona.com is registered):
+
+| Type | Name / Host | Value |
+|------|-------------|-------|
+| A | `@` | `185.199.108.153` |
+| A | `@` | `185.199.109.153` |
+| A | `@` | `185.199.110.153` |
+| A | `@` | `185.199.111.153` |
+| AAAA | `@` | `2606:50c0:8000::153` |
+| AAAA | `@` | `2606:50c0:8001::153` |
+| AAAA | `@` | `2606:50c0:8002::153` |
+| AAAA | `@` | `2606:50c0:8003::153` |
+| CNAME | `www` | `<username>.github.io.` |
+
+The four `A` records are the minimum; the `AAAA` (IPv6) rows are optional
+but recommended. Delete any pre-existing "parking page" `A`/`CNAME`
+records for `@` and `www` first.
+
+**2. In the repo:** Settings → Pages → Custom domain — it should already
+show `alanvisona.com` (from the `CNAME` file) with a green check once DNS
+propagates. If it's blank, type it in and Save.
+
+**3.** Tick **Enforce HTTPS** once the certificate is issued (minutes to
+an hour after DNS resolves).
+
+DNS changes can take from a few minutes to a few hours to propagate.
 
 ### Updating the site
 
