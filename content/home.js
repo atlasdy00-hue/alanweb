@@ -13,7 +13,7 @@
 // or remove an entry; keep them in the same order (most recent first).
 window.CONTENT_HOME = `
 ## Tagline
-Physics graduate with a condensed matter physics curriculum. Working on **nonlinear magnonics** at the moment.
+Physics graduate with a condensed matter physics curriculum. Working on **nonlinear magnonics**.
 
 ## Currently
 looking for a PhD position in condensed matter physics, with a focus on magnonics and spin wave dynamics. Open to related areas related to spin-dependent phenomena in condensed matter.
