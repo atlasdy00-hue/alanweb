@@ -147,35 +147,33 @@ Jekyll processing. Asset paths are relative and routing is hash-based, so
 the site works unchanged whether it's served from a subpath or a root
 domain — nothing to configure.
 
-### Custom domain — alanvisona.com
+### Custom domain — www.alanvisona.com
 
-The `CNAME` file in the repo root already holds `alanvisona.com`, so the
-site serves from the apex domain with `www` redirecting to it.
+The `CNAME` file in the repo root holds `www.alanvisona.com`. GitHub
+serves the site there and 301-redirects the bare `alanvisona.com` to it
+(the apex `A` records below are what make that redirect work). `www` as
+the primary is the more reliable setup for HTTPS-certificate issuance
+than an apex-only `A`-record configuration.
 
-**1. DNS records at the registrar** (where alanvisona.com is registered):
+**DNS** (managed in Cloudflare — DNS provider for alanvisona.com). All
+records **"DNS only" / grey cloud**, never proxied — a proxied record
+stops GitHub issuing the certificate.
 
-| Type | Name / Host | Value |
-|------|-------------|-------|
-| A | `@` | `185.199.108.153` |
-| A | `@` | `185.199.109.153` |
-| A | `@` | `185.199.110.153` |
-| A | `@` | `185.199.111.153` |
-| AAAA | `@` | `2606:50c0:8000::153` |
-| AAAA | `@` | `2606:50c0:8001::153` |
-| AAAA | `@` | `2606:50c0:8002::153` |
-| AAAA | `@` | `2606:50c0:8003::153` |
-| CNAME | `www` | `<username>.github.io.` |
+| Type | Name | Value | Proxy |
+|------|------|-------|-------|
+| CNAME | `www` | `atlasdy00-hue.github.io` | DNS only |
+| A | `@` | `185.199.108.153` | DNS only |
+| A | `@` | `185.199.109.153` | DNS only |
+| A | `@` | `185.199.110.153` | DNS only |
+| A | `@` | `185.199.111.153` | DNS only |
 
-The four `A` records are the minimum; the `AAAA` (IPv6) rows are optional
-but recommended. Delete any pre-existing "parking page" `A`/`CNAME`
-records for `@` and `www` first.
+Optional IPv6 for the apex: `AAAA @` → `2606:50c0:8000::153`,
+`2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153`.
 
-**2. In the repo:** Settings → Pages → Custom domain — it should already
-show `alanvisona.com` (from the `CNAME` file) with a green check once DNS
-propagates. If it's blank, type it in and Save.
-
-**3.** Tick **Enforce HTTPS** once the certificate is issued (minutes to
-an hour after DNS resolves).
+**In the repo:** Settings → Pages → Custom domain reconciles itself to
+whatever the `CNAME` file says, so pushing a change to that file is
+enough — no need to touch the field. Tick **Enforce HTTPS** once the
+certificate is issued (usually 15 min–1 h after the DNS check passes).
 
 DNS changes can take from a few minutes to a few hours to propagate.
 
