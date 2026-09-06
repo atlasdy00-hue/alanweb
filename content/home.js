@@ -19,9 +19,9 @@ Physics graduate with a condensed matter physics curriculum. Working on **nonlin
 looking for a PhD position in condensed matter physics, with a focus on magnonics and spin wave dynamics. Open to related areas related to spin-dependent phenomena in condensed matter.
 
 ## Research lede
-My recent research activities revolve around exploiting **nonlinear magnonics** to
+My recent research activities consist of exploiting **nonlinear magnonics** to
 outline potential applications for sustainable, low-dissipation signal processing
-and sensing technologies. My interests more broadly revolves around spin dependent phenomena in condensed matter physics. 
+and sensing technologies. My interests more broadly revolve around spin dependent phenomena in condensed matter physics. 
 
 ## Interest: Magnonics and Nanomagnetism
 Magnonics, dynamic magnonic crystals, magnonic devices, integrated magnonics, skyrmion lattices.  

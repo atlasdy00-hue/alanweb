@@ -20,7 +20,7 @@ for a given goal at the macroscale, made me deeply interested in understanding t
 During my Master's degree, I pursued a condensed matter physics path. 
 Understanding magnetism as a “macroscopic” quantum effect naturally drew me to systems where magnetization can be tuned and exploited, as well as to spin's overall role in condensed matter.
 Developing the theoretical formalism of spin systems, I encountered magnonics. Micromagnetic systems are highly sensitive to anisotropy, geometry, and the underlying topological spin texture. 
-This feature strongly motivated me to combine my experience in electronics and sensing to explore their potential in an applied framework in my thesis.
+These features strongly motivated me to combine my experience in electronics and sensing to explore their potential in an applied framework in my thesis.
 I thus developed my Master's thesis titled:“Nonlinear Magnonics in Vortex-State Ferromagnetic Nanodisks for Signal Processing and Sensing Technologies”, which I carried out mainly through numerical simulations (mumax3, MATLAB & Python).
 
 ## Paragraph 5
