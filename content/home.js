@@ -29,7 +29,7 @@ and sensing technologies. My interests more broadly revolve around spin dependen
 ## Interest: Quantum Magnetism & Superconductivity
 Artificial spin ice, spin-liquids, quantum magnonics. Spintronics, superconductors & magnon-qubits coupling.
 
-## Interest: Neuromorphic Computing & Quantum Logic Gates
+## Interest: Applications & Devices
 Implementation of typical neuromorphic computing and quantum logic-gate mechanisms. Topological programming &
 inverse design methods. Microwave-to-spin wave transducers.
 
