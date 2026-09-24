@@ -16,7 +16,7 @@ window.CONTENT_HOME = `
 Physics graduate with a condensed matter physics curriculum. Working on **nonlinear magnonics**.
 
 ## Currently
-looking for a PhD position in condensed matter physics, with a focus on magnonics and spin wave dynamics. Open to related areas related to spin-dependent phenomena in condensed matter.
+looking for a PhD position in condensed matter physics, with a focus on magnonics and spin wave dynamics. Open to areas related to spin-dependent phenomena in condensed matter.
 
 ## Research lede
 My recent research activities consist of exploiting **nonlinear magnonics** to
@@ -24,13 +24,14 @@ outline potential applications for sustainable, low-dissipation signal processin
 and sensing technologies. My interests more broadly revolve around spin dependent phenomena in condensed matter physics. 
 
 ## Interest: Magnonics and Nanomagnetism
-Magnonics, dynamic magnonic crystals, magnonic devices, integrated magnonics, skyrmion lattices.  
+2D & 3D magnonics, dynamic magnonic crystals, magnonic devices, integrated magnonics.  
 
-## Interest: Quantum Magnetism
-Artificial spin ice, spin-liquids, quantum magnonics. Spin-degrees of freedom in correlated electron phenomena, magnetic and topological quantum materials.
+## Interest: Quantum Magnetism & Superconductivity
+Artificial spin ice, spin-liquids, quantum magnonics. Spintronics, superconductors & magnon-qubits coupling.
 
 ## Interest: Neuromorphic Computing & Quantum Logic Gates
-Implement typical neuromorphic computing and quantum logic-gate mechanisms. Topological programming, magnon-qubits coupling, spintronics.
+Implementation of typical neuromorphic computing and quantum logic-gate mechanisms. Topological programming &
+inverse design methods. Microwave-to-spin wave transducers.
 
 ## Education institution
 M.Sc. in Physics (110/110 with honors) · University of Ferrara 
@@ -54,10 +55,9 @@ differential equations, pedagogically efficient lecture organization and deliver
 
 ## Skills: Experimental/ Devices and Techniques
 HRXRD, optical and IR interferometers, basic electronic lab equipment (oscilloscope, multimeter,
-power supplies, soldering, etc), dicing machine.
+power supplies, soldering, etc), dicing machine. Basic training on MFM and MOKE.
 
 ## Skills: Experimental/ Process
-Data acquisition and analysis, sensors characterization, crystals characterization,
-report writing, technical documentation organization and understanding,
-cleanroom experience, handling of chemicals.
+Cleanroom experience. Sensors and devices characterization, crystals characterization. Data acquisition and analysis,
+report writing, technical documentation organization and understanding, handling of chemicals.
 `;
